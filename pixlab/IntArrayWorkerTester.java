@@ -61,14 +61,14 @@ public class IntArrayWorkerTester
     int largest = worker.getLargest();
     System.out.println("Largest should be 6 and is " + largest); 
     // test when largest is first
-   int[][] nums3 = {{6, 2, 3}, {4, 5, 1}};
-   worker.setMatrix(nums3);
+    int[][] nums3 = {{6, 2, 3}, {4, 5, 1}};
+    worker.setMatrix(nums3);
     largest = worker.getLargest();
     System.out.println("Largest should be 6 and is " + largest); 
     // test when largest is in the middle
     int[][] nums4 = {{1, 2, 3}, {6, 5, 1}};
     worker.setMatrix(nums4);
-   largest = worker.getLargest();
+    largest = worker.getLargest();
     System.out.println("Largest should be 6 and is " + largest);
     // test when duplicate largest
     int[][] nums5 = {{6, 2, 6}, {4, 5, 1}};
