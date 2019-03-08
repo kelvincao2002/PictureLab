@@ -126,7 +126,8 @@ public class Picture extends SimplePicture
   {
       zeroRed();
       zeroGreen();
-    }
+  }
+  
   
      /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture

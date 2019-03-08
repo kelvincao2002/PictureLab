@@ -59,6 +59,11 @@ public class PictureTester
       beach.keepOnlyBlue();
       beach.explore();
    }
+  public static void testKeepOnlyRed()
+  {
+      Picture beach= new Picture("beach.jpg")
+    }
+    
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -69,7 +74,7 @@ public class PictureTester
     // to run
     testZeroBlue();
     testKeepOnlyBlue();
-    //testKeepOnlyRed();
+    testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
