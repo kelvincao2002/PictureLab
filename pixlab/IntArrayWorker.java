@@ -89,16 +89,28 @@ public class IntArrayWorker
         }
         return count;
   }
-  public void getLargest(int[][]n)
+  public int getLargest()
   {
-      //for(int[][]i:matrix)
+      int big=matrix[0][0];
+      for(int[]i:matrix)
       {
-          //for(int j:i)
-          //if(int [][]i
+          for(int j:i)
+          {
+              if(j>big)
+                big=j;
         }
-        
+        }
+        return big;
   }
-    
+  public int getColTotal(int n)
+  {
+      int total=0;
+      for(int i=0;i<matrix.length;i++)
+      {
+          total+=matrix[i][n];
+        }
+        return total;
+    }
   /** 
    * fill the array with a pattern
    */

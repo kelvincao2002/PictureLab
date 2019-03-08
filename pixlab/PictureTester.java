@@ -50,6 +50,15 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
+  //Kelvin's changes
+  public static void testKeepOnlyBlue()
+  {
+      
+      Picture beach=new Picture("beach.jpg");
+      
+      beach.keepOnlyBlue();
+      beach.explore();
+   }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -59,7 +68,7 @@ public class PictureTester
     // and comment out the ones you don't want
     // to run
     testZeroBlue();
-    //testKeepOnlyBlue();
+    testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
