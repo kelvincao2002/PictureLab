@@ -61,7 +61,10 @@ public class PictureTester
    }
   public static void testKeepOnlyRed()
   {
-      Picture beach= new Picture("beach.jpg")
+      Picture beach= new Picture("beach.jpg");
+      
+      beach.keepOnlyRed();
+      beach.explore();
     }
     
   
