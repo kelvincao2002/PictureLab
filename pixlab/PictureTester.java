@@ -65,7 +65,22 @@ public class PictureTester
       
       beach.keepOnlyRed();
       beach.explore();
-    }
+   }
+  public static void testKeepOnlyGreen()
+  {
+      Picture beach=new Picture("beach.jpg");
+      
+      beach.keepOnlyGreen();
+      beach.explore();
+  }
+  public static void testNegate()
+  {
+      Picture beach=new Picture("beach.jpg");
+      
+      beach.Negate();
+      beach.explore();
+      
+  }
     
   
   /** Main method for testing.  Every class can have a main
@@ -75,11 +90,11 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testKeepOnlyBlue();
-    testKeepOnlyRed();
+    //testZeroBlue();
+    // testKeepOnlyBlue();
+    //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    //testNegate();
+    testNegate();
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
