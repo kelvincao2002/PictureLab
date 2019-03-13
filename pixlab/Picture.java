@@ -279,23 +279,23 @@ public class Picture extends SimplePicture
   }
    public void mirrorArms()
   {
-    int mirrorPoint = 207;
-    Pixel leftPixel = null;
-    Pixel rightPixel = null;
+    int mirrorPoint = 196;
+    Pixel topPixel = null;
+    Pixel bottomPixel = null;
     int count = 0;
     Pixel[][] pixels = this.getPixels2D();
     
     // loop through the rows
-    for (int row = 0; row < 300; row++)
+    for (int row = 102; row < 293; row++)
     {
       // loop from 13 to just before the mirror point
-      for (int col = 104; col < mirrorPoint; col++)
+      for (int col = 165; col < mirrorPoint; col++)
       {
         
-        leftPixel = pixels[row][col];      
-        rightPixel = pixels[row]                       
-                         [mirrorPoint - col + mirrorPoint];
-        rightPixel.setColor(leftPixel.getColor());
+        topPixel = pixels[col][row];      
+        bottomPixel = pixels                      
+                         [mirrorPoint - col + mirrorPoint][row] ;
+        bottomPixel.setColor(topPixel.getColor());
       }
     }
   }
@@ -342,8 +342,8 @@ public class Picture extends SimplePicture
     Picture flowerNoBlue = new Picture(flower2);
     flowerNoBlue.zeroBlue();
     this.copy(flowerNoBlue,300,0);
-    this.copy(flower1,400,0);
-    this.copy(flower2,500,0);
+    this.copy(flower1,400,50);
+    this.copy(flower2,500,60);
     this.mirrorVertical();
     this.write("collage.jpg");
   }
