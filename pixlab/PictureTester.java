@@ -129,18 +129,18 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testKeepOnlyBlue();
-    testKeepOnlyRed();
-    testKeepOnlyGreen();
-    testNegate();
-    testGrayscale();
+    //testZeroBlue();
+    //testKeepOnlyBlue();
+    //testKeepOnlyRed();
+    //testKeepOnlyGreen();
+    //testNegate();
+    //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
-    testMirrorVerticalRighttoLeft();
-    testMirrorHorizontal();
-    testMirrorHorizontalBottoTop();
-    testDiagonal();
+    //testMirrorVerticalRighttoLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBottoTop();
+    //testDiagonal();
     testMirrorTemple();
     testMirrorArms();
     //testMirrorGull();

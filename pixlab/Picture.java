@@ -279,17 +279,17 @@ public class Picture extends SimplePicture
   }
    public void mirrorArms()
   {
-    int mirrorPoint = 162;
+    int mirrorPoint = 207;
     Pixel leftPixel = null;
     Pixel rightPixel = null;
     int count = 0;
     Pixel[][] pixels = this.getPixels2D();
     
     // loop through the rows
-    for (int row = 161; row < 172; row++)
+    for (int row = 0; row < 300; row++)
     {
       // loop from 13 to just before the mirror point
-      for (int col = 13; col < mirrorPoint; col++)
+      for (int col = 104; col < mirrorPoint; col++)
       {
         
         leftPixel = pixels[row][col];      
