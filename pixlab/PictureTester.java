@@ -84,9 +84,11 @@ public class PictureTester
   }
   public static void testCopy()
   {
-    Picture canvas = new Picture("640x480.jpg");
+    Picture ocean = new Picture("beach.jpg");
     
-    canvas.explore();
+    Picture flower=new Picture("snowman.jpg");
+    ocean.copy2(flower,10,10,60,160,180,230);
+    ocean.explore();
   }
   
   /** Method to test edgeDetection */
@@ -154,13 +156,13 @@ public class PictureTester
     //testMirrorHorizontal();
     //testMirrorHorizontalBottoTop();
     //testDiagonal();
-    testMirrorTemple();
-    testMirrorArms();
-    testMirrorGull();
+    //testMirrorTemple();
+    //testMirrorArms();
+    //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
+    //testCollage();
     testCopy();
-    //testEdgeDetection();
+    testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();

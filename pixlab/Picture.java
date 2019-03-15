@@ -307,7 +307,7 @@ public class Picture extends SimplePicture
     * @param startRow the start row to copy to
     * @param startCol the start col to copy to
     */
-  public void copy2(Picture fromPic, 
+  public void copy(Picture fromPic, 
                  int startRow, int startCol)
   {
     Pixel fromPixel = null;
@@ -335,18 +335,18 @@ public class Picture extends SimplePicture
   {
     Picture flower1 = new Picture("flower1.jpg");
     Picture flower2 = new Picture("flower2.jpg");
-    this.copy2(flower1,0,0);
-    this.copy2(flower2,100,0);
-    this.copy2(flower1,200,0);
+    this.copy(flower1,0,0);
+    this.copy(flower2,100,0);
+    this.copy(flower1,200,0);
     Picture flowerNoBlue = new Picture(flower2);
     flowerNoBlue.zeroBlue();
-    this.copy2(flowerNoBlue,300,0);
-    this.copy2(flower1,400,0);
-    this.copy2(flower2,500,0);
+    this.copy(flowerNoBlue,300,0);
+    this.copy(flower1,400,0);
+    this.copy(flower2,500,0);
     this.mirrorVertical();
     this.write("collage.jpg");
   }
-   public void copy(Picture fromPic, 
+   public void copy2(Picture fromPic, 
                  int startRow, int startCol,
                  int fSR,      int fSC,
                  int fER,      int fEC)
@@ -378,9 +378,9 @@ public class Picture extends SimplePicture
   {
     Picture flower1 = new Picture("flower1.jpg");
     Picture flower2 = new Picture("flower2.jpg");
-    this.copy(flower1,0,0,0,100,100,0);
-    this.copy(flower2,100,0,100,100,200,0);
-    this.copy(flower1,200,0,200,100,200,200);
+    this.copy2(flower1,0,0,0,100,100,0);
+    this.copy2(flower2,100,0,100,100,200,0);
+    this.copy2(flower1,200,0,200,100,200,200);
     Picture flowerNoBlue = new Picture(flower2);
     flowerNoBlue.zeroBlue();
     
